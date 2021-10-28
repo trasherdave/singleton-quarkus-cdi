@@ -1,4 +1,4 @@
-Entender os problemas de atribuir um novo objeto ao Singleton ==
+Entender os problemas de atribuir um novo objeto ao Singleton  
 
 o Atributo da classe Config foi injetado, e o ciclo de vida dele é gerenciado pelo CDI, diferentemente do parâmeto newConfig.
 Quando atribuimos o parâmetro newConfig a instância da classe Config - (this.config = newConfig) - o fato de newConfig ser um novo objeto
