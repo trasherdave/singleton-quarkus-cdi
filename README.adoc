@@ -1,0 +1,4 @@
+o Atributo da classe Config foi injetado, e o ciclo de vida dele é gerenciado pelo CDI, diferentemente do parâmeto newConfig.
+Quando atribuimos o parâmetro newConfig a instância da classe Config - (this.config = newConfig) - o fato de newConfig ser um novo objeto
+o Singleton não faz mais sentido, pois terá mais de uma instância. Na nova classe criada, RelatorioResource, injetamos novamente outra instância de Config
+dessa forma, o padrão Singleton não funciona mais. É preciso usar a única instância injetada pelo CDI.
